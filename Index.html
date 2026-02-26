@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CELSON REI DAS VENDAS</title>
+
+  <link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <img class="logo_language" src="imglogo/logo celson.jpeg" alt="">
+  <h1>CELSON REI DAS VENDAS</h1>
+
+  <nav class="header-nav">
+    <button class="menu-btn" onclick="openNav()">☰ Menu</button>
+    <a href="Index.html">Home</a>
+    <a href="conteudos/ambos/agendamento.html">Agendar</a>
+    <a href="sobre.html">Sobre</a>
+
+    <!-- Botão carrinho agora abre o mesmo sidebar -->
+    <button class="cart-btn" onclick="openNav()">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </button>
+  </nav>
+</header>
+
+<!-- SIDEBAR ÚNICA (MENU + CARRINHO) -->
+<aside id="mySidebar" class="sidebar">
+  <span class="closebtn" onclick="closeNav()">×</span>
+
+  
+  <!-- CARRINHO -->
+  <div class="cart-area">
+    <h2>Seu Carrinho</h2>
+
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <p>Total: <span id="cart-total">--</span></p>
+      <button id="checkout-btn" class="checkout-btn">
+        Finalizar pelo WhatsApp
+      </button>
+      <button id="clear-cart" class="clear-cart">
+        Limpar carrinho
+      </button>
+    </div>
+  </div>
+
+  <!-- CATEGORIAS -->
+  <fieldset class="field_sidebar">
+    <legend><h2>ROUPAS</h2></legend>
+    <ul>
+      <li><a href="#">Unissex</a></li>
+      <li><a href="#">Masculinas</a></li>
+      <li><a href="#">Femininas</a></li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="field_sidebar">
+    <legend><h2>ACESSÓRIOS</h2></legend>
+    <ul>
+      <li><a href="#">Unissex</a></li>
+      <li><a href="#">Masculinos</a></li>
+      <li><a href="#">Femininos</a></li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="field_sidebar">
+    <legend><h2>CALÇADOS</h2></legend>
+    <ul>
+      <li><a href="#">Unissex</a></li>
+      <li><a href="#">Masculinos</a></li>
+      <li><a href="#">Femininos</a></li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="field_sidebar">
+    <legend><h2>PERFUMES</h2></legend>
+    <ul>
+      <li><a href="#">Unissex</a></li>
+      <li><a href="#">Masculinos</a></li>
+      <li><a href="#">Femininos</a></li>
+    </ul>
+  </fieldset>
+
+  <hr>
+
+</aside>
+
+<!-- CONTEÚDO -->
+<main>
+  <section class="produtos">
+    <h2>Produtos</h2>
+    <div id="lista-produtos" class="grid"></div>
+  </section>
+</main>
+
+<footer>
+  <h3>© 2026 CELSON REI DAS VENDAS</h3>
+</footer>
+
+<script src="Index.js"></script>
+</body>
+</html>

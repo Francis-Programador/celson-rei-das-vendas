@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CELSON REI DAS VENDAS</title>
+  <link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <img class="logo_language" src="imglogo/logo celson.jpeg" alt="">
+    <h1>CELSON REI DAS VENDAS</h1>
+    <nav class="header-nav">
+      <button onclick="openNav()" class="menu-btn">☰ Menu</button>
+      <a href="Index.html">HOME</a>
+      <a href="conteudos/ambos/agendamento.html">Agendar</a>
+      <a href="sobre.html">Sobre Nós</a>
+    </nav>
+  </header>
+
+  <!-- SIDEBAR OCULTA -->
+  <aside id="mySidebar" class="sidebar">
+    <span class="closebtn" onclick="closeNav()">×</span>
+
+    <fieldset class="field_sidebar">
+      <legend>
+        <h2>ROUPAS</h2>
+      </legend>
+      <ul>
+        <li><a href="Index.html">Unissex</a></li>
+        <li><a href="Index.html">Masculinas</a></li>
+        <li><a href="Index.html">Femeninas</a></li>
+      </ul>
+    </fieldset>
+    <br>
+    <fieldset class="field_sidebar">
+      <legend>
+        <h2>ACESSORIOS</h2>
+      </legend>
+      <ul>
+        <li><a href="Index.html">Unissex</a></li>
+        <li><a href="Index.html">Masculinos</a></li>
+        <li><a href="Index.html">Femeninos</a></li>
+      </ul>
+    </fieldset>
+    <br>
+    <fieldset class="field_sidebar">
+      <legend>
+        <h2>CALCADOS</h2>
+      </legend>
+      <ul>
+        <li><a href="Index.html">Unissex</a></li>
+        <li><a href="Index.html">Masculinos</a></li>
+        <li><a href="Index.html">Femeninos</a></li>
+      </ul>
+    </fieldset>
+    <br>
+    <fieldset class="field_sidebar">
+      <legend>
+        <h2>PERFUMES</h2>
+      </legend>
+      <ul>
+        <li><a href="Index.html">Unissex</a></li>
+        <li><a href="Index.html">Masculinos</a></li>
+        <li><a href="Index.html">Femeninos</a></li>
+      </ul>
+    </fieldset>
+  </aside>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <!-- SOBRE -->
+    <section id="sobre-loja">
+      <h2>Sobre Nós</h2>
+        <section id="sobre">
+  <h2>Sobre a Celson Rei das Vendas</h2>
+
+  <p>
+    A <strong>Celson Rei das Vendas</strong> é uma marca focada em vender soluções.
+    Trabalhamos com <strong>produtos físicos e digitais</strong>, sempre com qualidade,
+    preço justo e confiança.
+  </p>
+
+  <p>
+    Atendemos clientes em <strong>todo o território de Angola</strong>, com entregas
+    rápidas e seguras. Nosso objetivo é facilitar sua compra e garantir satisfação
+    do início ao fim.
+  </p>
+
+  <p>
+    Aqui você encontra variedade, compromisso e seriedade.
+    <br>
+    <strong>Celson Rei das Vendas — vende tudo, entrega em todo lugar.</strong>
+  </p>
+</section>
+
+    </section>
+        <!-- SERVIÇOS -->
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Divulgação de Produtos</li>
+        <li>Vendas Online</li>
+        <li>Entrega Rápida</li>
+      </ul>
+    </section>
+
+    <!-- CONTACTOS -->
+    <section id="contacto-info">
+      <h2>Contactos</h2>
+      <ul>
+        <li>Email: <a href="celsonamerico10@gmail.com" type="e-mail">celsonamerico10@gmail.com</a></li>
+        <li>Telefone: <a href="tel:+244932563665" >244 932563665</a></li>
+        <li><a href="https://wa.me/244932563665" target="_blank">Whatsapp</a></li>
+      </ul>
+    </section>
+
+    <!-- FORMULÁRIO DE MENSAGEM -->
+    <section id="mensagem-contato">
+      <h2>Envie sua Mensagem</h2>
+      <form id="form-mensagem">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+        <button type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer id="contacto">
+    <h3>© 2026 CELSON REI DAS VENDAS</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1BoRVgtUzh/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/celson_americooficial" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/244932563665" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.tiktok.com/@celsonamerico3" target="_blank"><i class="fab fa-tiktok"></i></a>
+    
+    </div>
+  </footer>
+
+  <script src="Index.js"></script>
+  <script>
+    // FORMULÁRIO FUNCIONAL WHATSAPP
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('form-mensagem');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const mensagem = document.getElementById('mensagem').value.trim();
+
+        if(nome && email && mensagem){
+          const texto = `Olá, meu nome é ${nome} (${email}) e quero dizer: ${mensagem}`;
+          const link = `https://wa.me/244932563665?text=${encodeURIComponent(texto)}`;
+          window.open(link, '_blank'); // abre WhatsApp
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

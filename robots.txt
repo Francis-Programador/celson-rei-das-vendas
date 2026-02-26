@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Localize your sitemap URL below. Replace example.com with your real domain.
+Sitemap: https://example.com/sitemap.xml
